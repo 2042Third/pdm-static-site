@@ -41,7 +41,7 @@ jobs:
           remote_path: ${{ secrets.DIR_DEPLOY}}
           remote_host: pdm.pw
           remote_user: ${{ secrets.SSH_USER }}
-          remote_password: ${{ secrets.DEPLOY_KEY}}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_password: ${{ secrets.SSH_PRIVATE_KEY}}
+          remote_key: ${{ secrets.DEPLOY_KEY  }}
       - name: cleanup
         run: rm -rf ~/.ssh
