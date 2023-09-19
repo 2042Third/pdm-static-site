@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Yi Yang. This work is licensed under {license}'
+    notice: '© {year} Yi Yang. This site is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -67,7 +67,7 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: true
+    enable: false
   repository:
     url: 'https://github.com/2042third/pdm-static-site.git'
     content_dir: content
