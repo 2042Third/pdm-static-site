@@ -34,13 +34,14 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
       - name: rsync deployments
-        uses: burnett01/rsync-deployments@6.0.0
+        uses: burnett01/rsync-deployments@5.2
         with:
-          switches:  -rtv --delete 
-          path:  ./public/* 
-          remote_path: /usr/share/nginx/html/
-          remote_host: ${{ secrets.SSH_HOST }}
+          switches: -rtv --delete 
+          path: ./public/*
+          remote_path: ${{ secrets.DIR_DEPLOY}}
+          remote_host: pdm.pw
           remote_user: ${{ secrets.SSH_USER }}
+          remote_password: ${{ secrets.DEPLOY_KEY}}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: cleanup
         run: rm -rf ~/.ssh
