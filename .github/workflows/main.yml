@@ -1,0 +1,40 @@
+name: CI
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Update theme
+        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
+        run: git submodule update --init --recursive
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        # remove --minify tag if you do not need it
+        # docs: https://gohugo.io/hugo-pipes/minification/
+        run: hugo 
+
+      steps:
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: install ssh keys
+        # check this thread to understand why its needed:
+        # https://stackoverflow.com/a/70447517
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+      - name: Deploy with rsync
+        run: rsync -rtv --delete ./public/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/usr/share/nginx/html/
+      - name: cleanup
+        run: rm -rf ~/.ssh
