@@ -51,6 +51,7 @@ social:
   - icon: instagram
     icon_pack: fab
     link: https://instagram.com/geocushen
+    
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab
@@ -66,8 +67,39 @@ social:
 #email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Yi Yang is a graduate student at Carnegie Mellon University studying Information Security. He likes to write code and build things. He is currently working on a personal data manager (PDM) projects for fun. He is also looking for internship opportunities in the summer of 2024. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+ ### Some status on the projects (updated on Sep 19, 2023):
+- PDM Desktop App (This is what I am actively working on for the past two months or so):
+  - Encryption is finished (parallelized instead of single threaded as in the browser WebAssembly version)
+  - Notes update is *not* finished
+    - This is because I am working on the binary file encryption features first
+    - Should be done relatively soon...
+    - Only mentally blocked on implementing the basic network calls to the server... (literally just a few lines of code...)
+    - but it currently can retrieve, decrypt, and show notes from the server
+  - Chat not finished
+  - Have a binary file encryption "plugin" for folders and files that can encrypt files in cloud drive folders
+    - This is very cool because it can encrypt using pdm-crypt-module and the servers only need to keep the relative locations of the files and folders in a particular cloud drive folder.
+    - Should have a working version of this in a week or so
+  - Local storage is finished (the most robust local storage out of all the others)
+    - Using virtual file system in the memory as SQLite database, and only encrypted data is touching the hard drive
+ - PDM Mobile App: 0.1.0-alpha
+   - Encryption is finished
+   - Notes update is finished
+   - Local storage is partially finished
+     - Local storage is using Redux persist
+     - Encrypted using pdm-crypt-module
+     - Next step is to cache the encrypted data in local storage when internet is not avaliable
+   - Chat not finished
+ - PDM Web App: 0.1.0-alpha
+   - Encryption is finished
+   - Notes update is finished
+   - Chat not finished (should be done earlier than mobile app)
+   - Local storage partially finished
+     - Encrypted using pdm-crypt-module
+     - Local storage is using IndexedDB in browsers (all browsers support it, but many users just turn off the feature for security reasons)
+  
+    
+
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
