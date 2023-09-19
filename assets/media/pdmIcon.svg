@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M-8.52651e-14 512C-8.52651e-14 229.23 229.23-5.68434e-14 512-5.68434e-14C794.77-5.68434e-14 1024 229.23 1024 512C1024 794.77 794.77 1024 512 1024C229.23 1024-8.52651e-14 794.77-8.52651e-14 512Z" id="Fill"/>
+</defs>
+<g id="background" vectornator:layerName="background"/>
+<clipPath id="ArtboardFrame">
+<rect height="1024" width="1024" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="bird-back" vectornator:layerName="bird back">
+<use fill="#727476" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="1.20366" xlink:href="#Fill"/>
+<clipPath id="ClipPath">
+<use xlink:href="#Fill"/>
+</clipPath>
+<g clip-path="url(#ClipPath)">
+<path d="M422.785 942.471C422.785 704.728 659.82 512 952.217 512C1244.61 512 1481.65 704.728 1481.65 942.471C1481.65 1180.21 1244.61 1372.94 952.217 1372.94C659.82 1372.94 422.785 1180.21 422.785 942.471Z" fill="#c5c7c9" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="2.00131"/>
+</g>
+</g>
+<g id="bird" vectornator:layerName="bird">
+<path d="M655.294 182.756C495.795 146.34 337.056 245.808 300.724 404.937C292.588 440.57 291.319 476.163 295.98 510.37L212.192 592.211L118.529 683.752L249.26 675.969L369.791 668.774C409.22 712.432 461.973 744.89 523.728 758.99C683.228 795.407 841.966 695.939 878.298 536.809C914.631 377.68 814.793 219.173 655.294 182.756Z" fill="#ebedef" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="2.00131"/>
+</g>
+<g id="bird-eye" vectornator:layerName="bird eye">
+<path d="M583.35 430.181C583.35 395.215 611.696 366.869 646.662 366.869C681.628 366.869 709.974 395.215 709.974 430.181C709.974 465.147 681.628 493.493 646.662 493.493C611.696 493.493 583.35 465.147 583.35 430.181Z" fill="#343638" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-width="2.00131"/>
+</g>
+</svg>

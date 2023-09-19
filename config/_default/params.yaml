@@ -9,7 +9,7 @@ appearance:
   theme_day: custom
   theme_night: custom
   font: minimal
-  font_size: L
+  font_size: M
 
 # SEO
 
@@ -17,7 +17,7 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
+    org_name: 'pdm'
     description: 'PDM'
     twitter: ''
   analytics:
@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Yi Yang. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -53,7 +53,7 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Sep 19, 2023'
   time_format: '3:04 PM'
 
 # Site features
@@ -67,9 +67,9 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: false
+    enable: true
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/2042third/pdm-static-site.git'
     content_dir: content
     branch: main
   avatar:
@@ -99,9 +99,9 @@ features:
     api_key: ''
     zoom: 15
 
-extensions:
-  cms:
-    branch: main
-    local_backend: false
-  academicons:
-    enable: false
+#extensions:
+#  cms:
+#    branch: main
+#    local_backend: false
+#  academicons:
+#    enable: false

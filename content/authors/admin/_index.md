@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include end-to-end encrypted systems, encryption, and information security.
 
 #interests:
 #- Artificial Intelligence
@@ -45,17 +45,17 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/wowchemy
-  - icon: instagram
-    icon_pack: fab
-    link: https://instagram.com/geocushen
+#  - icon: twitter
+#    icon_pack: fab
+#    link: https://twitter.com/wowchemy
+#  - icon: instagram
+#    icon_pack: fab
+#    link: https://instagram.com/geocushen
     
 # Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/2042third
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
@@ -64,7 +64,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+email: "yiyang5@andrew.cmu.edu"
 ---
 
 Yi Yang is a graduate student at Carnegie Mellon University studying Information Security. He likes to write code and build things. He is currently working on a personal data manager (PDM) projects for fun. He is also looking for internship opportunities in the summer of 2024. 

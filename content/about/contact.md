@@ -12,19 +12,19 @@ weight: 50
 title: Get in touch
 subtitle:
 
-content:
-  # Automatically link email and phone or display as text?
-  autolink: true
-
-  # Email form provider
-  form:
-    provider: formspree
-    formspree:
-      id: xyyqdvop
+#content:
+#  # Automatically link email and phone or display as text?
+#  autolink: true
+#
+#  # Email form provider
+#  form:
+#    provider: formspree
+#    formspree:
+#      id: xyyqdvop
 
 
 design:
   columns: '1'
 ---
 
-[//]: # ({{< form-contact action="https://formspree.io/f/xyyqdvop" >}})
+{{< form-contact action="https://formspree.io/f/xyyqdvop" >}}
