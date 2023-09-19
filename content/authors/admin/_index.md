@@ -95,7 +95,7 @@ Yi Yang is a graduate student at Carnegie Mellon University studying Information
    - Encryption is finished
    - Notes update is finished
    - Chat not finished (should be done earlier than mobile app)
-   - Local storage partially finished
+   - Local storage partially finished~~~~
      - Encrypted using pdm-crypt-module
      - Local storage is using IndexedDB in browsers (all browsers support it, but many users just turn off the feature for security reasons)
   
@@ -103,3 +103,4 @@ Yi Yang is a graduate student at Carnegie Mellon University studying Information
 
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+
