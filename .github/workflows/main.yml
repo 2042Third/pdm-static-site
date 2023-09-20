@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main
   pull_request:
 
 jobs:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -26,6 +26,11 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Disable host key checking
+        run: |
+          echo "Host *" >> ~/.ssh/config
+          echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.2
         with:
@@ -34,7 +39,4 @@ jobs:
           remote_path: ${{ secrets.DIR_DEPLOY}}
           remote_host: ${{ secrets.SSH_HOST }}
           remote_user: ${{ secrets.SSH_USER }}
-          remote_key: ${{ secrets.DEPLOY_KEY  }}
-          remote_password: ${{ secrets.SSH_PRIVATE_KEY}}
-      - name: cleanup
-        run: rm -rf ~/.ssh
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
