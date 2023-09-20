@@ -26,14 +26,6 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Direct SSH Test
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh -o StrictHostKeyChecking=no -v ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'SSH works!'"
-
-
       - name: Disable host key checking
         run: |
           mkdir -p ~/.ssh
