@@ -28,6 +28,7 @@ jobs:
 
       - name: Disable host key checking
         run: |
+          mkdir -p ~/.ssh
           echo "Host *" >> ~/.ssh/config
           echo "  StrictHostKeyChecking no" >> ~/.ssh/config
 
