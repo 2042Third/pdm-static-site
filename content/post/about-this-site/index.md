@@ -1,17 +1,17 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "About This Site"
+title: "Current pdm progress"
 subtitle: ""
 summary: ""
-authors: []
-tags: []
+authors: ["Yi Yang"]
+tags: ["personal", "update", "pdm"]
 categories: []
 date: 2023-09-19T16:15:36-04:00
 lastmod: 2023-09-19T16:15:36-04:00
 featured: false
 draft: false
-
+editable: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
