@@ -52,9 +52,9 @@ footer:
 
 # Localization
 
-locale:
-  date_format: 'Sep 19, 2023'
-  time_format: '3:04 PM'
+#locale:
+#  date_format: 'Sep 19, 2023'
+#  time_format: '3:04 PM'
 
 # Site features
 
