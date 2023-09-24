@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "NotesForTryHackMeRed1"
+title: "Notes For Try Hack Me Red 1"
 subtitle: ""
 summary: ""
 authors: []
@@ -25,7 +25,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: [THM]
+projects: []
 ---
 ### Penetration Tests
 
