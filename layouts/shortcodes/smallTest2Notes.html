@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monospaced Page</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+
+<h3 dir="ltr">Causal Inference</h3>
+<p dir="ltr"><strong><strong>Specific causal question (SCQ) </strong></strong></p>
+<ul><li>SCQ four components</li><li><ul><li><ul><li>intervention ("what is the impact of xxx", x)</li><li>event & purpose ("of xxx", x improves y )</li><li>who ("for xxx", group_A, a group )</li><li>alternative or the control  ("relative to xxx", x_control )</li></ul></li><li>Example output: What is the impact of x on improving y for group_A relative to x_control.</li><li>Define y: continues variable, each individual of group_A has a y</li></ul></li></ul>
+<p dir="ltr"><strong><strong>Hypothesis</strong></strong> </p>
+<p dir="ltr">The researchers hypothesize that x will improve y for group_A.</p>
+<p dir="ltr"><strong><strong>Potential Outcomes of One Treatment (total count = 2) </strong></strong></p>
+<ul><li>What would the outcome of y be if <u>one of group_A</u> (a individual of group_A) was subjected under x_control.</li><li>What would the outcome of y be if one of group_A was subjected under x.</li></ul>
+<p dir="ltr"><strong><strong>Average Factual Outcome (for treatment effect x)</strong></strong></p>
+<p dir="ltr">What is the average y after individuals in group_A are subjected under x.</p>
+<p dir="ltr"><strong><strong>Average missing counterfactual (for treatment effect x)</strong></strong></p>
+<p dir="ltr">What would have been the average y for individuals in group_A are subjected under x_control instead of x but all else remained the same.<br></p>
+
+<h3 dir="ltr">Randomization</h3>
+<ul><li>Randomization ensures the average difference in outcome of y between x and x_control is only due to the treatment because the two groups are on average identical to each others in all other pretreatment characteristic.</li><li>Ensures internal validity</li><li>lacks in external validity, where the conclusion can only be generalized for this experiment.</li></ul>
+<p dir="ltr"><br></p>
+<h3 dir="ltr">Observational</h3>
+<ul><li>Not randomized </li><li>estimated average MCF using group_A who received x_control, but cannot guarantee unbiased</li><li>To be unbiased: no other features systematically differ between those who was subjected under x and those who was subjected under x_control</li></ul>
+<p dir="ltr"><br></p>
+<h3 dir="ltr">Confounders, covariate</h3>
+<ul><li>Systematic difference</li><li>Two conditions for cofounder </li><li><ul><li>related or predicts the outcome of y and not observed</li><li>difference in <strong><strong>baseline covariate</strong></strong> of the x group and the x_control group</li></ul></li></ul>
+<h2 dir="ltr">Univariate Summary Statistics And Figures</h2>
+<p dir="ltr">Want to find out what values they take; the frequency of each value or each range of values: central tendency, spread, shape, notable features.</p>
+<p dir="ltr"><strong><strong>Variables to identify</strong></strong></p>
+<ul><li>continuous </li><li>discret </li><li><ul><li>dichotomous (use mean)</li><li>categorical (use mode for central tendency)</li><li>ordinal (use median ): categorical with meaningful order</li><li>continuous variable (mean and median): numeric variable</li></ul></li></ul>
+<p dir="ltr"><br></p>
+<p dir="ltr"><strong><strong>Quantiles</strong></strong>:</p>
+<ul><li>Univariate variable (median: average of middle-most two values, or middle-most)</li><li>mean: more sensitive to outliers than median</li><li>mode: the most frequently appearing variable</li><li>first quartile (lower quartile): the first 25% of the data</li><li>second quartile: the first 50% of the data, which is the median</li><li>third quartile (upper quartile): the first 75% of the data</li><li>interquartile range: diff between upper and lower quart. and measures the spread</li><li>root mean square: abs. magnitude change in proportion </li><li>standard deviation: the proportion of y subjected to x  is approx. sd() away from its mean.</li></ul>
+<p dir="ltr"><strong><strong>Plots</strong></strong></p>
+<ul><li>Bar plots: Summarize the distribution (0.3, 0.4, etc.), or dichotomous var, of a proportion var or char. var with multiple categories. </li><li>Histogram: (For numeric vals) First, discretize by creating bins; second, calculate the density of each bin; third, use density as the height of the bin.</li><li>Box plot: shows distribution of numeric values; best to show variables side-by-side; visualizes median, upper q., lower q., and IQR together</li></ul>
+<h3 dir="ltr"><strong><strong>Bivariate Relationships</strong></strong></h3>
+<ul><li>Scatter Plot: Bivariate only; shows relationship between two continuous values.</li></ul>
+<p dir="ltr">Types:</p>
+<ul><li>dichotomous vs. categorical: grounded bar plot</li><li>dichotomous vs. continuous : two bar plots, overlaid or side-by-side histograms</li><li>categorical vs. continuous : two box plots side-by-side</li><li>continuous  vs. continuous : scatter</li></ul>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+</body>
+</html>
