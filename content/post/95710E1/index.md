@@ -275,4 +275,38 @@ A principle that hires an agent to do something without the ability to oversee t
     - Investor and financial advisor
     - Teacher and student
 
-## Loss Aversion 
+## Loss Aversion (behavior economics)
+
+## Collusion
+
+Firms acting together as a unit, almost like a monopoly; forming a "cartel". This can help them raise the price higher than what they can do in the Cournot case.
+
+- Explicit collusion
+  - Joint Executive Committee, 1880-1886
+  - Cartels
+- Tacit collusion
+  - hard to prosecute, hard to differentiate from good business practice
+
+### Cartels
+
+Illegal in most countries, but there are some international cartels
+
+- PMEC, or the diamond cartel
+
+###  Strategic Behavior
+
+- Entry deterrence: keeping firms from entering this market
+  - capacity expansion
+    - limited pricing
+    - blockade entry
+    - entry accommodation
+    -
+    - product proliferation
+    - contracts
+  -
+- predation
+  - predatory pricing
+  - non-pricing predation
+    - abuse dominant position
+
+### Mergers and Acquisitions
