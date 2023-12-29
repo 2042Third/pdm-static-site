@@ -31,7 +31,7 @@ projects: [pdm]
 ---
 ### Photos I took with film cameras.
 
-![Two Photos together of the bank near CMU.](/static/pictures/scan0001.png)
-![Bridge of CMU](/static/pictures/scan0003.png)
-![Under exposed photo of the church near CMU.](/static/pictures/img013.png)
+![Two Photos together of the bank near CMU.](/staticfiles/pictures/scan0001.png)
+![Bridge of CMU](/staticfiles/pictures/scan0003.png)
+![Under exposed photo of the church near CMU.](/staticfiles/pictures/img013.png)
 
