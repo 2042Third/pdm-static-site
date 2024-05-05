@@ -20,6 +20,38 @@ image:
   focal_point: ""
   preview_only: false
 
+gallery_item:
+  - album: "scs-final-pp"
+    image: "output1.png"
+    caption: "1 vault running on 1 core."
+  - album: "scs-final-pp"
+    image: "output2.png"
+    caption: "2 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output3.png"
+    caption: "3 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output4.png"
+    caption: "4 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output5.png"
+    caption: "5 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output6.png"
+    caption: "6 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output7.png"
+    caption: "7 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output8.png"
+    caption: "8 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output90.png"
+    caption: "9 vaults running on 1 core."
+  - album: "scs-final-pp"
+    image: "output91.png"
+    caption: "10 vaults running on 1 core."
+
 # Projects (optional).
 #   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
@@ -47,9 +79,9 @@ The highlighted columns are the sets each vault is running on.
 
 [//]: # (![output8.png]&#40;/staticfiles/scs-final/output8.png "8 vaults running on 1 core."&#41;)
 
-[//]: # (![output9.png]&#40;/staticfiles/scs-final/output9.png "9 vaults running on 1 core."&#41;)
+[//]: # (![output90.png]&#40;/staticfiles/scs-final/output90.png "9 vaults running on 1 core."&#41;)
 
-[//]: # (![output10.png]&#40;/staticfiles/scs-final/output10.png "10 vaults running on 1 core."&#41;)
+[//]: # (![output91.png]&#40;/staticfiles/scs-final/output91.png "10 vaults running on 1 core."&#41;)
 
 {{< gallery album="scs-final-pp" >}}
 
