@@ -27,6 +27,7 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+## Secure Computer Systems Final Project
 ### The Worse Case Scenario Prime+Probe Attack
 The highlighted columns are the sets each vault is running on. 
 ![output1.png](..%2F..%2F..%2Fstatic%2Fstaticfiles%2Fscs-final%2Foutput1.png "1 vault running on 1 core.")
