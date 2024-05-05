@@ -30,16 +30,29 @@ projects: []
 ## Secure Computer Systems Final Project
 ### The Worse Case Scenario Prime+Probe Attack
 The highlighted columns are the sets each vault is running on. 
-![output1.png](/staticfiles/scs-final/output1.png "1 vault running on 1 core.")
-![output2.png](/staticfiles/scs-final/output2.png "2 vaults running on 1 core.")
-![output3.png](/staticfiles/scs-final/output3.png "3 vaults running on 1 core.")
-![output4.png](/staticfiles/scs-final/output4.png "4 vaults running on 1 core.")
-![output5.png](/staticfiles/scs-final/output5.png "5 vaults running on 1 core.")
-![output6.png](/staticfiles/scs-final/output6.png "6 vaults running on 1 core.")
-![output7.png](/staticfiles/scs-final/output7.png "7 vaults running on 1 core.")
-![output8.png](/staticfiles/scs-final/output8.png "8 vaults running on 1 core.")
-![output9.png](/staticfiles/scs-final/output9.png "9 vaults running on 1 core.")
-![output10.png](/staticfiles/scs-final/output10.png "10 vaults running on 1 core.")
+
+[//]: # (![output1.png]&#40;/staticfiles/scs-final/output1.png "1 vault running on 1 core."&#41;)
+
+[//]: # (![output2.png]&#40;/staticfiles/scs-final/output2.png "2 vaults running on 1 core."&#41;)
+
+[//]: # (![output3.png]&#40;/staticfiles/scs-final/output3.png "3 vaults running on 1 core."&#41;)
+
+[//]: # (![output4.png]&#40;/staticfiles/scs-final/output4.png "4 vaults running on 1 core."&#41;)
+
+[//]: # (![output5.png]&#40;/staticfiles/scs-final/output5.png "5 vaults running on 1 core."&#41;)
+
+[//]: # (![output6.png]&#40;/staticfiles/scs-final/output6.png "6 vaults running on 1 core."&#41;)
+
+[//]: # (![output7.png]&#40;/staticfiles/scs-final/output7.png "7 vaults running on 1 core."&#41;)
+
+[//]: # (![output8.png]&#40;/staticfiles/scs-final/output8.png "8 vaults running on 1 core."&#41;)
+
+[//]: # (![output9.png]&#40;/staticfiles/scs-final/output9.png "9 vaults running on 1 core."&#41;)
+
+[//]: # (![output10.png]&#40;/staticfiles/scs-final/output10.png "10 vaults running on 1 core."&#41;)
+
+{{< gallery album="scs-final-pp" >}}
+
 
 ### Performance of Multi-Threaded Encryption Program (ChaCha20) Using This Protection Mechanism
 Due to the nature of the ChaCha20 algorithm, it is able to encrypt on arbitrary number of threads. 
