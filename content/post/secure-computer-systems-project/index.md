@@ -91,6 +91,25 @@ The multi-threading mechanism is rewritten to be able to run all threads on a ch
 This graph below is the performance of the encryption program running on 1 to 30 threads of both normal 
 multi-threading and all threads on the same core. 
 
+Line 401 of cc20_multi.cpp in [source](https://github.com/2042Third/pdm-crypt-module/blob/mem_side_channel/src/cc20core/cc20_multi.cpp).
+The worker threads can run on a specific thread. 
+```c++
+... 
+void Cc20::worker::multi_enc_pthrd() {
+  size_t tracker = 0; 
+
+#ifdef __linux__
+  if (coreId!=-1) {
+    // Set the affinity of the thread to the specified core
+    cpu_set_t cpuSet;
+    CPU_ZERO(&cpuSet);
+    CPU_SET(coreId, &cpuSet);
+    pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuSet);
+  }
+#endif // __linux__
+...
+```
+
 ![enc_output.png](/staticfiles/scs-final/enc_output.png)
 
 ![htop_screen_shot.jpg](/staticfiles/scs-final/htop_screen_shot.jpg)
