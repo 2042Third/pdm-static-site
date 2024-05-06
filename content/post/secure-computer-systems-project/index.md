@@ -93,4 +93,4 @@ multi-threading and all threads on the same core.
 
 ![enc_output.png](/staticfiles/scs-final/enc_output.png)
 
-![htop_screen_shot](/staticfiles/scs-final/htop_screen_shot.png)
+![htop_screen_shot.jpg](/staticfiles/scs-final/htop_screen_shot.jpg)
