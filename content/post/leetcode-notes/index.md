@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "One Billion Rows Challenge"
+title: "Leetcode Notes"
 subtitle: ""
 summary: ""
 authors: []
 tags: []
 categories: []
-date: 2024-06-21T00:00:00Z
-lastmod: 2024-06-21T00:00:00Z
+date: 2024-06-22T00:00:00Z
+lastmod: 2024-06-22T00:00:00Z
 featured: false
 draft: false
 editable: false
