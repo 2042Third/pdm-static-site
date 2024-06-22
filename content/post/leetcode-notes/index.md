@@ -31,35 +31,62 @@ projects: [pdm]
 ---
 # Leetcode Notes
 
-### 2507 - Smallest Value After Replacing With Sum of Prime Factors 
-  
-  ```c++
-  class Solution {
+### 2507 - Smallest Value After Replacing With Sum of Prime Factors
+
+```c++
+
+
+class Solution {
 public:
-    int findAns(int n){
-        int div=2,ans=0;
-        while(n%2==0){
-            ans+=2;
-            n/=2;
+    int pf (int n) {
+        int p = n;
+        int out = 0;
+        while (p % 2 == 0) { // 
+            p /= 2;
+            out += 2 ;
         }
-        int res=sqrt(n);
-        for(int i=3;i<=res;i+=2){
-            while(n%i==0){
-                ans+=i;
-                n/=i;
+        int sqt = sqrt(p);
+        for (int i =3 ;i<=sqt ;i+=2) {
+            while (p%i == 0) {
+                p = p/i;
+                out += i;
+    
             }
         }
-        if(n>2) ans+=n;
-        return ans;
-    }
-    int smallestValue(int n) {
-        while(1){
-            int ans=findAns(n);
-            if(ans==n) return n;
-            n=ans;
+        if (p>2) {
+            out = out+p;
         }
-        return n;
+        return out;
     }
+
+    int smallestValue(int n) {
+        int p = n;
+        while (1) {
+            int a = pf (p) ;
+            std::cout<< "Output: "<< a <<std::endl;
+            if (a == p){
+                return p;
+            }
+            else {
+                p=a;
+            }
+        }
+    }
+
+    /**
+    => 15 
+    => 3 * 5 => 8
+    => 2 * 2 * 2 => 6
+    => 2 * 3 => 5 (is_prime ).
+  
+    */
 };
 ```
+
+#### Reason:
+
+[Link to the math](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)
+
+> Every composite number has at least one prime factor less than or equal to the square root of itself.
+This property can be proved using a counter statement. Let a and b be two factors of n such that a*b = n. If both are greater than ?n, then a.b > ?n, * ?n, which contradicts the expression “a * b = n”.
 
