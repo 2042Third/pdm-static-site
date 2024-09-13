@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -20,7 +20,6 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.118.2'
           extended: true
 
       - name: Build
@@ -35,7 +34,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.2
         with:
-          switches: -rtv --delete 
+          switches: -rtv --delete
           path: ./public/*
           remote_path: ${{ secrets.DIR_DEPLOY}}
           remote_host: ${{ secrets.SSH_HOST }}
