@@ -58,7 +58,7 @@ Golang exposes pointers, but you cannot do pointer arithmetic or cast an "uint64
 And whenever memory gets remapped to a different location, the pointers are changed as well, so you cannot have a dangling pointer.
 This is Go discouraging developers from handling pointers directly. 
 
-### Stack Usage
+## Stack Usage
 Java has a stack for each thread, and the stack is used for storing local variables and function calls, and all the objects are stored in the heap.
 C heavily uses the stack for storing local variables and function calls, and the heap is used for dynamically allocated memory.
 Go also uses the stack for function calls and local variables, but its stack model is different from C or Java.
