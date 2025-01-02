@@ -50,3 +50,12 @@ jobs:
           remote_host: ${{ secrets.NEW_HOST }}
           remote_user: ${{ secrets.NEW_USER }}
           remote_key: ${{ secrets.NEW_SSH_PRIVATE_KEY }}
+      - name: rsync deployments 3
+        uses: burnett01/rsync-deployments@5.2
+        with:
+          switches: -rtv --delete
+          path: ./public/*
+          remote_path: ~/html.pw.pdm
+          remote_host: ${{ secrets.NEW_HOST }}
+          remote_user: ${{ secrets.NEW_USER }}
+          remote_key: ${{ secrets.NEW_SSH_PRIVATE_KEY }}
